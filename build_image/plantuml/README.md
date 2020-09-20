@@ -1,7 +1,11 @@
 PlantUML Server
 ===============
 
-**copy from https://github.com/plantuml/plantuml-server and add sources list** 
+Notes
+============
+ * copy from https://github.com/plantuml/plantuml-server and add sources list
+ * use china source mirrors
+ * build for arm64
 
 [![Build Status](https://travis-ci.org/plantuml/plantuml-server.png?branch=master)](https://travis-ci.org/plantuml/plantuml-server)
 [![](https://images.microbadger.com/badges/image/plantuml/plantuml-server.svg)](https://microbadger.com/images/plantuml/plantuml-server "Get your own image badge on microbadger.com")
