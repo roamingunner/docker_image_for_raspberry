@@ -1,5 +1,4 @@
 FROM maven:3-jdk-11
-
 COPY sources.list /etc/apt/sources.list
 RUN apt-get update && apt-get install -y --no-install-recommends graphviz fonts-wqy-zenhei && rm -rf /var/lib/apt/lists/*
 
@@ -8,6 +7,7 @@ COPY src /app/src/
 
 ENV MAVEN_CONFIG=/app/.m2
 WORKDIR /app
+COPY settings.xml /usr/share/maven/conf/settings.xml
 RUN mvn package
 
 # chmod required to ensure any user can run the app
